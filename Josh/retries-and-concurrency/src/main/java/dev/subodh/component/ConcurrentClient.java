@@ -13,7 +13,7 @@ public class ConcurrentClient {
 
     private final Set<String> threads = new ConcurrentSkipListSet<>();
 
-    @ConcurrencyLimit(1)
+    @ConcurrencyLimit(5)
     public void write() throws Exception {
         Thread.sleep(1000);
         threads.add(Thread.currentThread().getName());
