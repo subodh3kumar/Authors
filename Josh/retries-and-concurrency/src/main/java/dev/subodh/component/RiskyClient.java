@@ -49,6 +49,5 @@ public class RiskyClient {
                 return null;
             }
         });
-
     }
 }
